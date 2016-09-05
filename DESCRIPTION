@@ -1,13 +1,21 @@
 Package: MCDM
-Title: Multi-Criteria Decision Making Methods
-Version: 1.0
-Date: 2015-09-10
+Type: Package
+Title: Multi-Criteria Decision Making Methods for Crisp Data
+Version: 1.1
+Date: 2016-09-05
 Author: Blanca A. Ceballos Martin <bceballos@decsai.ugr.es>
 Maintainer: Blanca A. Ceballos Martin <bceballos@decsai.ugr.es>
-Description: An R implementation of Four Multi-Criteria Decision Making (MCDM) Methods: Technique for Order of Preference by Similarity to Ideal Solution (TOPSIS), "VIseKriterijumska Optimizacija I Kompromisno Resenje" (VIKOR), both Multi-Objective Optimization by Ratio Analysis and Full Multiplicative Form (Multi-MOORA) and Weighted Aggregated Sum Product ASsessment (WASPAS). In addition, this package provides a MetaRanking function which combines the output of the previous methods. 
+Description: Implementation of several MCDM methos for crisp data for decision
+    making problems. The methods that are implemented in this package are RIM,
+    TOPSIS (with two normalization procedures), VIKOR, Multi-MOORA and WASPAS.
+    In addition, MetaRanking function calculates a new ranking from the sum 
+    of the rankings calculated, as well as an aggregated ranking.
+Imports: RankAggreg
 License: LGPL (>= 3)
 URL: http://decsai.ugr.es/index.php?p=miembros&id=19909
+LazyData: true
+RoxygenNote: 5.0.1
 NeedsCompilation: no
-Packaged: 2015-11-18 16:00:54 UTC; Blanky
+Packaged: 2016-09-05 11:31:04 UTC; Modo
 Repository: CRAN
-Date/Publication: 2015-11-19 11:02:12
+Date/Publication: 2016-09-05 13:53:38

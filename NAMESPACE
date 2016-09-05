@@ -1,2 +1,3 @@
-exportPattern("^[[:alpha:]]+")
+import(RankAggreg)
+export(MetaRanking, MMOORA, RIM, TOPSISVector, TOPSISLinear, VIKOR, WASPAS)
 
