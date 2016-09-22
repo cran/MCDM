@@ -53,10 +53,8 @@ TOPSISLinear <- function(decision, #matrix with all the alternatives
   NW <- N%*%W
 
   #2. Ideal solutions
-  posI <- as.integer(cb == "max") * apply(NW, 2, max) +
-    as.integer(cb == "min") * apply(NW, 2, min)
-  negI <- as.integer(cb == "min") * apply(NW, 2, max) +
-    as.integer(cb == "max") * apply(NW, 2, min)
+  posI <- apply(NW, 2, max) 
+  negI <- apply(NW, 2, min) 
 
   #3. Distances to the ideal solutions
   distance =function(x,y){

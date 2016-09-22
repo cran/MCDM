@@ -1,8 +1,8 @@
 Package: MCDM
 Type: Package
 Title: Multi-Criteria Decision Making Methods for Crisp Data
-Version: 1.1
-Date: 2016-09-05
+Version: 1.2
+Date: 2016-09-21
 Author: Blanca A. Ceballos Martin <bceballos@decsai.ugr.es>
 Maintainer: Blanca A. Ceballos Martin <bceballos@decsai.ugr.es>
 Description: Implementation of several MCDM methos for crisp data for decision
@@ -16,6 +16,6 @@ URL: http://decsai.ugr.es/index.php?p=miembros&id=19909
 LazyData: true
 RoxygenNote: 5.0.1
 NeedsCompilation: no
-Packaged: 2016-09-05 11:31:04 UTC; Modo
+Packaged: 2016-09-22 08:31:35 UTC; Modo
 Repository: CRAN
-Date/Publication: 2016-09-05 13:53:38
+Date/Publication: 2016-09-22 16:50:45

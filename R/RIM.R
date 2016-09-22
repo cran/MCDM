@@ -50,7 +50,8 @@ RIM <- function(decision, #matrix with all the alternatives
       else if( ((decision[i,j]>= CD[2,j]) && (decision[i,j]<= AB[2,j])) && (CD[2,j]!=AB[2,j])){
         N[i,j]=1-(min(abs(decision[i,j]-CD[1,j]),abs(decision[i,j]-CD[2,j]))/abs(CD[2,j]-AB[2,j]))
       }
-      else stop("error in normalization procedure: A != B and D != C")
+      else stop("Error in normalization procedure: if x is in [A,C], then A != C,
+                or if x is in [D,B], then D != B")
     }
   }
 
