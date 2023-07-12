@@ -66,11 +66,9 @@ VIKOR <- function(decision, #matrix with all the alternatives
     Q <- v*(S-min(S))/(max(S)-min(S))+(1-v)*(R-min(R))/(max(R)-min(R))
 
   #4. Checking if Q is valid
-  if( (Q == "NaN") || (Q == "Inf")){
-    RankingQ <- rep("-",nrow(decision))
-  }else{
-    RankingQ <- rank(Q, ties.method= "first") 
-  }
+  RankingQ = ifelse(is.infinite(Q) | is.na(Q), NA, 
+         rank(Q, ties.method = "first"))
+  
   #5. Ranking the alternatives
   return(data.frame(Alternatives = 1:nrow(decision), S = S, R = R, Q = Q, Ranking = RankingQ))
 
